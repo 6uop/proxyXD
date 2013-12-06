@@ -19,7 +19,6 @@ var ProxyXD = (function() {
 	function onReady(callback) {
 		var iframe = document.getElementById('anyWhere_iframe');
 		if (!iframe) {
-			isReady = true;
 			var iframe = document.createElement('iframe');
 			iframe.style.cssText = 'border:0;width:0;height:0;display:none';
 			iframe.id = 'anyWhere_iframe';
