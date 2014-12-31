@@ -30,7 +30,7 @@ var ProxyXD = (function() {
 			iframeDocument.close();
 			var script = iframeDocument.createElement('script');
 			script.type = 'text/javascript';
-			script.src = 'resource/proxy-xd.client.js?proxyurl='+_proxyurl || 'about:blank';
+			script.src = _proxyurl ? ('resource/proxy-xd.client.js?proxyurl='+_proxyurl) : 'about:blank';
 			script.charset = 'utf-8';
 			onScriptLoad(script, function() {
 				var proxyClient = iframe.contentWindow.ProxyXD.client;
